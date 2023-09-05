@@ -1,7 +1,21 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
+  const languages = [
+    "Javascript",
+    "Typescript",
+    "React",
+    "Node",
+    "Next",
+    "Html",
+    "Css",
+    "Tailwind",
+    "PostgreSQL",
+    "MongoDB",
+    "Prisma",
+    "Git/Github",
+  ];
+
   return (
     <main>
       <header>
@@ -24,8 +38,21 @@ export default function Home() {
             aprimorar minhas habilidades de programação.
           </p>
         </div>
-        
+        <div>
+          <h3>Linguagens/Frameworks</h3>
+          <Skills languages={languages} />
+        </div>
       </section>
     </main>
+  );
+}
+
+function Skills(props) {
+  return (
+    <ul>
+      {props.languages.map((language) => {
+        return <li key={language}>{language}</li>;
+      })}
+    </ul>
   );
 }
