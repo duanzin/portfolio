@@ -23,13 +23,13 @@ export default function Home() {
         <Link href="https://github.com/duanzin">Github</Link>
       </header>
       <section>
-        <h1>Olá, eu sou Lucas Duan</h1>
-        <span>Desenvolvedor fullstack</span>
+        <h1 className="text-7xl">Olá, eu sou Lucas Duan</h1>
+        <span className="text-2xl text-[#4466ff]">Desenvolvedor fullstack</span>
       </section>
       <section id="sobre">
-        <h2>Sobre mim</h2>
+        <h2 className="text-6xl">Sobre mim</h2>
         <div>
-          <p>
+          <p className="text-xl">
             Sou um desenvolvedor web especializado em full stack com diversas
             tecnologias. Possuo conhecimento de desenvolvimento front end e back
             end além de criação e comunicação com banco de dados. Tive minha
@@ -37,20 +37,20 @@ export default function Home() {
             busca de oportunidades de projetos que me permitam aplicar e
             aprimorar minhas habilidades de programação.
           </p>
-        </div>
-        <div>
-          <h3>Linguagens/Frameworks</h3>
-          <Skills languages={languages} />
+          <div>
+            <h3 className="text-2xl">Linguagens/Frameworks</h3>
+            <Skills languages={languages} />
+          </div>
         </div>
       </section>
       <section id="contato">
-        <h2>Contato</h2>
-        <p>
-          Voce pode me contatar pelo{" "}
-          <Link href="https://www.linkedin.com/in/lucasduan/">Linkedin</Link> ou
+        <h2 className="text-6xl">Contato</h2>
+        <p className="text-3xl">
+          Voce pode me contatar pelo
+          <Link href="https://www.linkedin.com/in/lucasduan/" className="text-[#4466ff]">Linkedin</Link> ou
           pelo seguinte email
         </p>
-        <span>lucaduan@gmail.com</span>
+        <span className="text-4xl">lucaduan@gmail.com</span>
       </section>
     </main>
   );
@@ -58,7 +58,7 @@ export default function Home() {
 
 function Skills(props) {
   return (
-    <ul>
+    <ul className="flex gap-4">
       {props.languages.map((language) => {
         return <li key={language}>{language}</li>;
       })}

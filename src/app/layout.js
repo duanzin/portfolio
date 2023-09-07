@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <nav>
-          <a href="#sobre" className="[writing-mode:vertical-lr]">
+          <a href="#sobre" className="bg-black text-3xl [writing-mode:vertical-lr] hover:bg-[#4466ff]">
             Sobre
           </a>
-          <a href="#contato" className="[writing-mode:vertical-lr]">
+          <a href="#contato" className="bg-black text-3xl [writing-mode:vertical-lr] hover:bg-[#4466ff]">
             Contato
           </a>
         </nav>
