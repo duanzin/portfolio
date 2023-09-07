@@ -26,7 +26,7 @@ export default function Home() {
         <h1>Olá, eu sou Lucas Duan</h1>
         <span>Desenvolvedor fullstack</span>
       </section>
-      <section>
+      <section id="sobre">
         <h2>Sobre mim</h2>
         <div>
           <p>
@@ -42,6 +42,15 @@ export default function Home() {
           <h3>Linguagens/Frameworks</h3>
           <Skills languages={languages} />
         </div>
+      </section>
+      <section id="contato">
+        <h2>Contato</h2>
+        <p>
+          Voce pode me contatar pelo{" "}
+          <Link href="https://www.linkedin.com/in/lucasduan/">Linkedin</Link> ou
+          pelo seguinte email
+        </p>
+        <span>lucaduan@gmail.com</span>
       </section>
     </main>
   );
