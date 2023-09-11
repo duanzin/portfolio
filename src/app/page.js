@@ -22,7 +22,7 @@ export default function Home() {
         <Link href="https://www.linkedin.com/in/lucasduan/">Linkedin</Link>
         <Link href="https://github.com/duanzin">Github</Link>
       </header>
-      <section className="w-fit">
+      <section className="flex flex-col items-center">
         <h1 className="text-7xl">Olá, eu sou Lucas Duan</h1>
         <span className="text-2xl text-[#4466ff]">Desenvolvedor fullstack</span>
       </section>
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="contato">
+      <section id="contato" className="flex flex-col items-center">
         <h2 className="text-6xl w-fit mx-auto">Contato</h2>
         <p className="text-3xl">
           Voce pode me contatar pelo
