@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Typing from "./TypingAnimation.js";
 
 export default function Home() {
   const languages = [
@@ -22,9 +23,11 @@ export default function Home() {
         <Link href="https://www.linkedin.com/in/lucasduan/">Linkedin</Link>
         <Link href="https://github.com/duanzin">Github</Link>
       </header>
-      <section className="flex flex-col items-center">
+      <section className="flex flex-col justify-center items-center">
         <h1 className="text-7xl">Olá, eu sou Lucas Duan</h1>
-        <span className="text-2xl text-[#4466ff]">Desenvolvedor fullstack</span>
+        <span className="text-2xl text-[#4466ff] w-fit">
+          <Typing />
+        </span>
       </section>
       <section id="sobre" className="w-8/12">
         <h2 className="text-6xl w-fit mx-auto">Sobre mim</h2>
@@ -41,7 +44,7 @@ export default function Home() {
           </p>
           <div className="w-1/2">
             <h3 className="text-2xl">Linguagens/Frameworks</h3>
-            <Skills languages={languages} />
+            <ListSkills languages={languages} />
           </div>
         </div>
       </section>
@@ -58,13 +61,18 @@ export default function Home() {
           </Link>
           ou pelo seguinte email
         </p>
-        <span className="text-4xl">lucaduan@gmail.com</span>
+        <a
+          href="mailto:lucaduan@gmail.com"
+          className="text-4xl hover:text-[#4466ff]"
+        >
+          lucaduan@gmail.com
+        </a>
       </section>
     </main>
   );
 }
 
-function Skills(props) {
+function ListSkills(props) {
   return (
     <ul className="flex gap-4 flex-wrap">
       {props.languages.map((language) => {
