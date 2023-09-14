@@ -28,6 +28,12 @@ export default function Home() {
         <span className="text-2xl text-[#4466ff] w-fit">
           <Typing />
         </span>
+        <a
+          href="#contato"
+          className="w-fit h-fit px-5 py-3 text-xl font-bold text-black bg-[#4466ff] hover:text-white"
+        >
+          Fale Comigo
+        </a>
       </section>
       <section id="sobre" className="w-8/12">
         <h2 className="text-6xl w-fit mx-auto">Sobre mim</h2>
@@ -51,14 +57,13 @@ export default function Home() {
       <section id="contato" className="flex flex-col items-center">
         <h2 className="text-6xl w-fit mx-auto">Contato</h2>
         <p className="text-3xl">
-          Voce pode me contatar pelo
+          Voce pode me contatar pelo{" "}
           <Link
             href="https://www.linkedin.com/in/lucasduan/"
-            className="text-[#4466ff]"
+            className="text-[#4466ff] shadow-[inset_0_0_0_0_#4466ff] hover:shadow-[inset_150px_0_0_0_#4466ff] hover:text-white [transition:color_.3s_ease-in-out,box-shadow_.3s_ease-in-out]"
           >
-            {" "}
-            Linkedin{" "}
-          </Link>
+            Linkedin
+          </Link>{" "}
           ou pelo seguinte email
         </p>
         <a
