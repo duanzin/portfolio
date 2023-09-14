@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Typing from "./TypingAnimation.js";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   const languages = [
@@ -18,12 +19,16 @@ export default function Home() {
   ];
 
   return (
-    <main className="w-full flex flex-col items-center">
-      <header>
-        <Link href="https://www.linkedin.com/in/lucasduan/">Linkedin</Link>
-        <Link href="https://github.com/duanzin">Github</Link>
+    <main className="w-full flex flex-col items-center ml-16">
+      <header className="flex justify-start w-full">
+        <Link href="https://www.linkedin.com/in/lucasduan/">
+          <FaLinkedin className="text-4xl" />
+        </Link>
+        <Link href="https://github.com/duanzin">
+          <FaGithub className="text-4xl" />
+        </Link>
       </header>
-      <section className="flex flex-col justify-center items-center">
+      <section className="flex flex-col justify-center items-center gap-y-2 h-screen">
         <h1 className="text-7xl">Olá, eu sou Lucas Duan</h1>
         <span className="text-2xl text-[#4466ff] w-fit">
           <Typing />
@@ -35,7 +40,7 @@ export default function Home() {
           Fale Comigo
         </a>
       </section>
-      <section id="sobre" className="w-8/12">
+      <section id="sobre" className="w-8/12 mb-10">
         <h2 className="text-6xl w-fit mx-auto">Sobre mim</h2>
         <div className="flex">
           <p className="text-xl w-1/2">
@@ -54,7 +59,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="contato" className="flex flex-col items-center">
+      <section id="contato" className="flex flex-col items-center mb-56">
         <h2 className="text-6xl w-fit mx-auto">Contato</h2>
         <p className="text-3xl">
           Voce pode me contatar pelo{" "}

@@ -10,9 +10,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <nav className="w-16 h-screen bg-black">
+        <nav className="w-16 h-screen bg-black fixed left-0">
           <a href="#sobre" className="text-3xl text-center font-bold w-full p-2.5 [writing-mode:vertical-lr] hover:bg-[#4466ff]">
             Sobre
           </a>
