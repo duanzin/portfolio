@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Typing from "./TypingAnimation.js";
+import Image from "next/image.js";
+import Img from "/public/images/1668711014937.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
@@ -28,7 +30,14 @@ export default function Home() {
           <FaGithub className="text-4xl" />
         </Link>
       </header>
-      <section className="flex flex-col justify-center items-center gap-y-2 h-screen">
+      <section className="flex flex-col justify-center items-center gap-y-2 h-screen pb-60">
+        <Image
+          src={Img}
+          width={300}
+          height={300}
+          alt="Picture of the author"
+          className="rounded-full"
+        />
         <h1 className="text-7xl">Olá, eu sou Lucas Duan</h1>
         <span className="text-2xl text-[#4466ff] w-fit">
           <Typing />
