@@ -22,11 +22,11 @@ export default function Home() {
 
   return (
     <main className="w-full flex flex-col items-center ml-16">
-      <header className="flex justify-start w-full">
-        <Link href="https://www.linkedin.com/in/lucasduan/">
+      <header className="flex justify-start w-full h-fit p-4 gap-x-4">
+        <Link href="https://www.linkedin.com/in/lucasduan/" target="_blank">
           <FaLinkedin className="text-4xl" />
         </Link>
-        <Link href="https://github.com/duanzin">
+        <Link href="https://github.com/duanzin" target="_blank">
           <FaGithub className="text-4xl" />
         </Link>
       </header>
@@ -44,7 +44,7 @@ export default function Home() {
         </span>
         <a
           href="#contato"
-          className="w-fit h-fit px-5 py-3 text-xl font-bold text-black bg-[#4466ff] hover:text-white"
+          className="w-fit h-fit rounded-md px-5 py-3 text-xl font-bold text-[#111] bg-[#4466ff] hover:text-white"
         >
           Fale Comigo
         </a>
@@ -75,6 +75,7 @@ export default function Home() {
           <Link
             href="https://www.linkedin.com/in/lucasduan/"
             className="text-[#4466ff] shadow-[inset_0_0_0_0_#4466ff] hover:shadow-[inset_150px_0_0_0_#4466ff] hover:text-white [transition:color_.3s_ease-in-out,box-shadow_.3s_ease-in-out]"
+            target="_blank"
           >
             Linkedin
           </Link>{" "}
@@ -96,7 +97,7 @@ function ListSkills(props) {
     <ul className="flex gap-4 flex-wrap">
       {props.languages.map((language) => {
         return (
-          <li key={language} className="bg-[#232323] p-2 inline">
+          <li key={language} className="bg-[#232323] p-2 inline rounded-md">
             {language}
           </li>
         );
