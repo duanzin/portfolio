@@ -50,7 +50,7 @@ export default function Home() {
         </a>
       </section>
       <section id="sobre" className="w-8/12 mb-10">
-        <h2 className="text-6xl w-fit mx-auto">Sobre mim</h2>
+        <h2 className="text-6xl w-fit mx-auto mb-5">Sobre mim</h2>
         <div className="flex">
           <p className="text-xl w-1/2">
             Sou um desenvolvedor web especializado em full stack com diversas
@@ -68,8 +68,47 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section
+        id="projetos"
+        className="w-8/12 flex flex-col items-center mb-10"
+      >
+        <h2 className="text-6xl w-fit mx-auto mb-5">Projetos</h2>
+        <div className="w-full flex flex-wrap justify-between gap-y-14">
+          <div className="flex flex-col w-[31.25rem]">
+            <div className="w-full h-64 bg-[#232323] relative mb-5">
+              <Link
+                href="https://github.com/duanzin/social_network-front"
+                target="_blank"
+                className="absolute left-14 top-8"
+              >
+                <Image
+                  src={Img}
+                  alt="Picture of the author"
+                  className="h-48 w-96"
+                />
+              </Link>
+            </div>
+            <Link
+              href="https://github.com/duanzin/social_network-front"
+              target="_blank"
+              className="text-3xl"
+            >
+              Social Network
+            </Link>
+            <span className="text-2xl text-[#4466ff]">
+              Nextjs, tailwind, typescript, prisma
+            </span>
+            <p className="text-lg">
+              Rede social baseada no twitter. Usuários podem postar e ver posts
+              de outros usuários e segui-los. Novas funcionalidades estão sendo
+              implementadas constantemente. O código do backend está no
+              repositório linkado no readme.
+            </p>
+          </div>
+        </div>
+      </section>
       <section id="contato" className="flex flex-col items-center mb-56">
-        <h2 className="text-6xl w-fit mx-auto">Contato</h2>
+        <h2 className="text-6xl w-fit mx-auto mb-5">Contato</h2>
         <p className="text-3xl">
           Voce pode me contatar pelo{" "}
           <Link

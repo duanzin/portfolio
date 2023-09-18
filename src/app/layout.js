@@ -16,6 +16,9 @@ export default function RootLayout({ children }) {
           <a href="#sobre" className="text-3xl text-center font-bold w-full p-2.5 [writing-mode:vertical-lr] hover:bg-[#4466ff]">
             Sobre
           </a>
+          <a href="#projetos" className="text-3xl text-center font-bold w-full p-2.5 [writing-mode:vertical-lr] hover:bg-[#4466ff]">
+            Projetos
+          </a>
           <a href="#contato" className="text-3xl text-center font-bold w-full p-2.5 [writing-mode:vertical-lr] hover:bg-[#4466ff]">
             Contato
           </a>
