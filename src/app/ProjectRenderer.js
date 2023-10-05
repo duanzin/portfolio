@@ -27,10 +27,10 @@ export default function Project() {
   ];
 
   return (
-    <div className="w-full flex flex-wrap justify-between gap-y-14">
+    <div className="w-full flex flex-wrap justify-between gap-y-14 max-[1263px]:justify-center">
       {projects.map((data) => (
         <div className="flex flex-col w-[31.25rem]">
-          <Link href={data.url} target="_blank" className="w-full h-64 mb-5">
+          <Link href={data.url} target="_blank" className="w-full h-64 mb-5 max-sm:h-[51.2%]">
             <Image
               src={data.thumb}
               alt="Picture of project"

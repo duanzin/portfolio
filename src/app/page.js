@@ -22,7 +22,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="w-full flex flex-col items-center ml-16">
+    <main className="w-full flex flex-col items-center pl-16">
       <header className="flex justify-start w-full h-fit p-4 gap-x-4">
         <Link href="https://www.linkedin.com/in/lucasduan/" target="_blank">
           <FaLinkedin className="text-4xl" />
@@ -39,7 +39,7 @@ export default function Home() {
           alt="Picture of the author"
           className="rounded-full"
         />
-        <h1 className="text-7xl">Olá, eu sou Lucas Duan</h1>
+        <h1 className="text-7xl text-center">Olá, eu sou Lucas Duan</h1>
         <span className="text-2xl text-[#4466ff] w-fit">
           <Typing />
         </span>
@@ -50,10 +50,10 @@ export default function Home() {
           Fale Comigo
         </a>
       </section>
-      <section id="sobre" className="w-8/12 mb-10">
+      <section id="sobre" className="w-8/12 mb-10 max-[1563px]:w-5/6">
         <h2 className="text-6xl w-fit mx-auto mb-5">Sobre mim</h2>
-        <div className="flex">
-          <p className="text-xl w-1/2">
+        <div className="flex justify-center w-full gap-y-4 max-md:flex-col">
+          <p className="text-xl w-1/2 max-md:w-full">
             Sou um desenvolvedor web especializado em full stack com diversas
             tecnologias. Possuo conhecimento de desenvolvimento front end e back
             end além de criação e comunicação com banco de dados.
@@ -63,22 +63,22 @@ export default function Home() {
             estou em busca de oportunidades de projetos que me permitam aplicar
             e aprimorar minhas habilidades de programação.
           </p>
-          <div className="w-1/2">
-            <h3 className="text-2xl">Linguagens/Frameworks</h3>
+          <div className="w-1/2 max-md:w-full">
+            <h3 className="text-2xl mb-3">Linguagens/Frameworks</h3>
             <ListSkills languages={languages} />
           </div>
         </div>
       </section>
       <section
         id="projetos"
-        className="w-8/12 flex flex-col items-center mb-10"
+        className="w-8/12 flex flex-col items-center mb-10 max-[1563px]:w-5/6"
       >
         <h2 className="text-6xl w-fit mx-auto mb-5">Projetos</h2>
         <Project />
       </section>
       <section id="contato" className="flex flex-col items-center mb-56">
         <h2 className="text-6xl w-fit mx-auto mb-5">Contato</h2>
-        <p className="text-3xl">
+        <p className="text-3xl text-center">
           Voce pode me contatar pelo{" "}
           <Link
             href="https://www.linkedin.com/in/lucasduan/"
