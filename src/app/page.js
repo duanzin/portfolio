@@ -22,7 +22,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="w-full flex flex-col items-center pl-16">
+    <main className="w-full flex flex-col items-center pl-16 max-[350px]:pl-10">
       <header className="flex justify-start w-full h-fit p-4 gap-x-4">
         <Link href="https://www.linkedin.com/in/lucasduan/" target="_blank">
           <FaLinkedin className="text-4xl" />
@@ -31,15 +31,15 @@ export default function Home() {
           <FaGithub className="text-4xl" />
         </Link>
       </header>
-      <section className="flex flex-col justify-center items-center gap-y-2 h-screen min-h-[53.25rem] pb-60">
+      <section className="flex flex-col justify-center items-center gap-y-2 h-screen min-h-[39.375rem] pt-16 pb-60">
         <Image
           src={Img}
           width={300}
           height={300}
           alt="Picture of the author"
-          className="rounded-full"
+          className="rounded-full max-[374px]:w-64 max-[374px]:h-64"
         />
-        <h1 className="text-7xl text-center">Olá, eu sou Lucas Duan</h1>
+        <h1 className="text-7xl text-center max-[468px]:text-6xl max-[396px]:text-5xl max-[330px]:text-4xl">Olá, eu sou Lucas Duan</h1>
         <span className="text-2xl text-[#4466ff] w-fit">
           <Typing />
         </span>
@@ -78,7 +78,7 @@ export default function Home() {
       </section>
       <section id="contato" className="flex flex-col items-center mb-56">
         <h2 className="text-6xl w-fit mx-auto mb-5">Contato</h2>
-        <p className="text-3xl text-center">
+        <p className="text-3xl text-center max-[430px]:text-2xl max-[362px]:text-xl">
           Voce pode me contatar pelo{" "}
           <Link
             href="https://www.linkedin.com/in/lucasduan/"
@@ -91,7 +91,7 @@ export default function Home() {
         </p>
         <a
           href="mailto:lucaduan@gmail.com"
-          className="text-4xl hover:text-[#4466ff]"
+          className="text-4xl hover:text-[#4466ff] max-[430px]:text-3xl max-[362px]:text-2xl"
         >
           lucaduan@gmail.com
         </a>
