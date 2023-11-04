@@ -31,7 +31,7 @@ export default function Home() {
           <FaGithub className="text-4xl" />
         </Link>
       </header>
-      <section className="flex flex-col justify-center items-center gap-y-2 h-screen pb-60">
+      <section className="flex flex-col justify-center items-center gap-y-2 h-screen min-h-[53.25rem] pb-60">
         <Image
           src={Img}
           width={300}
