@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image.js";
 import SocialImg from "/public/images/socialPrint.png";
 import TodoImg from "/public/images/corePrint.png";
+import FoodImg from "/public/images/foodPrint.png";
 
 export default function Project() {
   const projects = [
@@ -19,10 +20,19 @@ export default function Project() {
       title: "CoreNotes",
       url: "https://github.com/duanzin/corelab-front",
       thumb: TodoImg,
-      technologies: "React, typescript, Node",
+      technologies: "React, Typescript, Node",
       description: `Aplicativo web para criar notas de tarefas. Após escrever
        uma nota é possivel editar seu conteudo, mudar sua cor, favorita-la e 
        deleta-la. O código do backend está no repositório linkado no readme.`,
+    },
+    {
+      title: "Fast Food",
+      url: "https://github.com/duanzin/fast_food-front",
+      thumb: FoodImg,
+      technologies: "React, Typescript, Node, Tailwind",
+      description: `Aplicativo para escolher lanche fast food. Um usuário pode
+       escolher quais lanches deseja e outros podem ver os lanches que estão sendo
+        feitos. O código do backend está no repositório linkado no readme.`,
     },
   ];
 
@@ -30,7 +40,11 @@ export default function Project() {
     <div className="w-full flex flex-wrap justify-between gap-y-14 max-[1263px]:justify-center">
       {projects.map((data) => (
         <div className="flex flex-col w-[31.25rem]">
-          <Link href={data.url} target="_blank" className="w-full h-64 mb-5 max-sm:h-[51.2%]">
+          <Link
+            href={data.url}
+            target="_blank"
+            className="w-full h-64 mb-5 max-sm:h-[51.2%]"
+          >
             <Image
               src={data.thumb}
               alt="Picture of project"
